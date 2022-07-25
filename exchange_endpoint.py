@@ -143,8 +143,8 @@ def log_message(d):
     # Takes input dictionary d and writes it to the Log table
     # Hint: use json.dumps or str() to get it in a nice string form
     m = json.dumps(d)
-    log_m = Log(message = m)
-    g.session.add(log_m)
+    #log_m = Log(message = m)
+    g.session.add(Log(message = m))
     g.session.commit()
     #pass
 
